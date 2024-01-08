@@ -7,10 +7,10 @@ VIEWER=evince
 report: $(MAIN).pdf
 
 $(MAIN).pdf: $(MAIN).tex
-    pdflatex $(MAIN)
-    bibtex $(MAIN)
-    pdflatex $(MAIN)
-    pdflatex $(MAIN)
+	pdflatex $(MAIN)
+	bibtex $(MAIN)
+	pdflatex $(MAIN)
+	pdflatex $(MAIN)
 
 view: report
     $(VIEWER) $(MAIN).pdf &
