@@ -4,7 +4,7 @@ MAIN=main
 # PDF viewer
 VIEWER=evince
 
-all: $(MAIN).pdf
+report: $(MAIN).pdf
 
 $(MAIN).pdf: $(MAIN).tex
     pdflatex $(MAIN)
@@ -12,7 +12,7 @@ $(MAIN).pdf: $(MAIN).tex
     pdflatex $(MAIN)
     pdflatex $(MAIN)
 
-view: all
+view: report
     $(VIEWER) $(MAIN).pdf &
 
 clean:
