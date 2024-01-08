@@ -1,4 +1,4 @@
-# Name of the main .tex file without the extension
+# Name of the main .tex file 
 MAIN=main
 
 # PDF viewer
