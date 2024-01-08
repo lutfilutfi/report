@@ -13,7 +13,7 @@ $(MAIN).pdf: $(MAIN).tex
 	pdflatex $(MAIN)
 
 view: report
-    $(VIEWER) $(MAIN).pdf &
+	$(VIEWER) $(MAIN).pdf &
 
 clean:
-    rm -f *.aux *.bbl *.blg *.log *.out *.pdf
+	rm -f *.aux *.bbl *.blg *.log *.out *.pdf
